@@ -34,7 +34,7 @@ def traer():
 	
 
 	string=arduino.readline()#leemos nuevamente la temperatura y la humeadad enuna sola linea
-	stringS=string.decode("utf-8")#convertimos los datos de bytes a string 
+	stringS=string.decode("utf-8")#convertimos los datos de bits a string 
 	temp=stringS[0:4:1]#separamos en una variable temp los primeros cinco caracteres de la linea leida para la temperatura de 0 a 4 en pasos de 1
 	hum=stringS[5:9:1]#separamos en una variable hum los segundos cinco caracteres de la linea leida para la humedad de 5 a 9 en pasos de 1
 	
